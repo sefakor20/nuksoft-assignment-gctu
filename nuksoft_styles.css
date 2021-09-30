@@ -1,0 +1,107 @@
+body{
+  background-color:silver;
+ }
+table,tr, th, td{
+  border:1px solid grey;
+}
+tr,td{
+  text-align:center;
+}
+table{
+    height:400px;
+    width:700px;
+    color:black;
+    background-color:white;
+}
+/* .r{ height:40px;} */
+.l{ height:70px; width: 30px;}
+.u{height:40px;}
+.n{ height:30px;}
+.k{ height:600px;width:300px;}
+
+ul.nav {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item {
+    width: 150px;
+    margin: 5px;
+    border-right: 1px solid grey;
+}
+.list-item a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  border-right: 1px solid grey;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 5px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+  border-right: 1px solid grey;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
